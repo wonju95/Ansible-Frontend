@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  
+  sidebarToggleClick(event: MouseEvent){
+    event.preventDefault();
+    document.body.classList.toggle('sb-sidenav-toggled');
+  }
 
 }
