@@ -8,7 +8,7 @@ const MainRoutes: Routes = [
     component: MainComponent,
     children: [
       {path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then((m) => m.DashboardModule), },
-      // {path: 'board', loadChildren: () => import('../board/board.module').then((m) => m.BoardModule), },
+      {path: 'board', loadChildren: () => import('../board/board.module').then((m) => m.BoardModule), },
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
     ]
   }
